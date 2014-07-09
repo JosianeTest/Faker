@@ -207,6 +207,9 @@ class Lorem extends \Faker\Provider\Base
         return join($text, '');
     }
 
+    /**
+     * @param integer $nbElements
+     */
     protected static function randomizeNbElements($nbElements)
     {
         return (int) ($nbElements * mt_rand(60, 140) / 100) + 1;

@@ -75,6 +75,9 @@ class CompanyTest extends \PHPUnit_Framework_TestCase
 
 class TestableCompany extends Company
 {
+    /**
+     * @param string $catchPhrase
+     */
     public static function isCatchPhraseValid($catchPhrase)
     {
         return parent::isCatchPhraseValid($catchPhrase);

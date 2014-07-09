@@ -20,6 +20,7 @@ class Internet extends \Faker\Provider\Internet
     /**
      * Converts Italian characters to their ASCII representation
      *
+     * @param string $string
      * @return string
      */
     private static function toAscii($string)
