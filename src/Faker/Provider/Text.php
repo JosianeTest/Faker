@@ -71,6 +71,9 @@ abstract class Text extends \Faker\Provider\Base
         return $result.'.';
     }
 
+    /**
+     * @param integer $indexSize
+     */
     protected function getConsecutiveWords($indexSize)
     {
         if (!isset($this->consecutiveWords[$indexSize])) {

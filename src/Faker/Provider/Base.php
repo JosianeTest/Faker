@@ -79,7 +79,7 @@ class Base
      * Return a random float number
      *
      * @param int       $nbMaxDecimals
-     * @param int|float $min
+     * @param integer $min
      * @param int|float $max
      * @example 48.8932
      *
@@ -184,7 +184,7 @@ class Base
      * Returns a random key from a passed associative array
      *
      * @param  array $array
-     * @return mixed
+     * @return string
      */
     public static function randomKey($array = array())
     {

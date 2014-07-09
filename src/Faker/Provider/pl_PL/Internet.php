@@ -12,6 +12,7 @@ class Internet extends \Faker\Provider\Internet
     /**
      * Converts polish characters to their ASCII representation
      *
+     * @param string $string
      * @return string
      */
     private function toAscii($string)

@@ -139,6 +139,9 @@ class Generator
         return $this->providers;
     }
 
+    /**
+     * @param integer $seed
+     */
     public function seed($seed = null)
     {
         mt_srand($seed);
