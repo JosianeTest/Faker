@@ -33,7 +33,7 @@ class Person extends \Faker\Provider\Base
         'Jane',
     );
 
-    protected static $lastName = array('Doe');
+    protected static $lastName = array('Doe', 'Dupont');
 
     protected static $titleMale = array('Mr.', 'Dr.', 'Prof.');
 
@@ -64,7 +64,8 @@ class Person extends \Faker\Provider\Base
     {
         if ($gender === static::GENDER_MALE) {
             return static::firstNameMale();
-        } elseif ($gender === static::GENDER_FEMALE) {
+        }
+        if ($gender === static::GENDER_FEMALE) {
             return static::firstNameFemale();
         }
         
@@ -86,7 +87,7 @@ class Person extends \Faker\Provider\Base
      */
     public function lastName()
     {
-        return static::randomElement(static::$lastName);
+        return static::randomElement(static::$lastName)
     }
 
     /**
